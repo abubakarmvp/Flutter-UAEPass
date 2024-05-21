@@ -78,15 +78,15 @@ class _UaepassLoginViewState extends State<UaepassLoginView> {
                 final code = Uri.parse(url).queryParameters['code']!;
                 Navigator.pop(context, code);
               } else if (url.contains('cancelled')) {
-                if (Uaepass.instance.showMessages) {
-                  ScaffoldMessenger.of(context)
-                    ..removeCurrentSnackBar()
-                    ..showSnackBar(
-                      const SnackBar(
-                        content: Text('User cancelled login with UAE Pass'),
-                      ),
-                    );
-                }
+                // if (Uaepass.instance.showMessages) {
+                //   ScaffoldMessenger.of(context)
+                //     ..removeCurrentSnackBar()
+                //     ..showSnackBar(
+                //       const SnackBar(
+                //         content: Text('User cancelled the login'),
+                //       ),
+                //     );
+                // }
 
                 Navigator.pop(context);
               }
