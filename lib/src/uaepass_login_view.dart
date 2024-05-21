@@ -80,12 +80,12 @@ class _UaepassLoginViewState extends State<UaepassLoginView> {
               } else if (url.contains('cancelled')) {
                 if (Uaepass.instance.showMessages) {
                   ScaffoldMessenger.of(context)
-                    ..removeCurrentSnackBar()
-                    ..showSnackBar(
-                      const SnackBar(
-                        content: Text('User cancelled the login'),
-                      ),
-                    );
+                    ..removeCurrentSnackBar();
+                    // ..showSnackBar(
+                    //   const SnackBar(
+                    //     content: Text('User cancelled the login'),
+                    //   ),
+                    // );
                 }
 
                 Navigator.pop(context);
