@@ -83,7 +83,7 @@ class _UaepassLoginViewState extends State<UaepassLoginView> {
                     ..removeCurrentSnackBar()
                     ..showSnackBar(
                       const SnackBar(
-                        content: Text('User cancelled login with UAE Pass'),
+                        content: Text('User cancelled the login'),
                       ),
                     );
                 }
